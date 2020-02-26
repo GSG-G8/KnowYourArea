@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Know Your Area</title>
+    <link href="./css/style.css" rel="stylesheet" />
+
+</head>
+<body>
+    <main>
+        <header class="header">
+            <h1>
+                Know Your Area
+            </h1>
+            <h2>
+                Our App aims to help people to explore locations using huge database and allows people to post data to the database in order to help other people
+            </h2>
+        </header>
+        <section class="section">
+                <input type="text" name="location" value="" placeholder="location">
+                <button type="submit" name="button">View Details</button>
+            <form class="form" action="/locations" method="post">
+                <input type="text" name="name" value="" placeholder="Location Name">
+                <input type="text" name="category" value="" placeholder="Category">
+                <input type="text" name="description" value="" placeholder="Description">
+                <input type="text" name="nearby" value="" placeholder="Near by Locations">
+                <input type="text" name="coordinates" value="" placeholder="Coordinates">
+                <button type="submit" name="button">Add Location</button>
+            </form>
+        </section>
+        <section class = "section results__container">
+            Here you can find the results
+        </section>
+
+    </main>
+
+    <script src="./script/fetch.js"></script>
+    <script src="./script/dom.js"></script>
+</body>
+</html>
