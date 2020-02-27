@@ -8,7 +8,8 @@ router.post('/locations', (req, res) => {
 });
 
 router.get('/locations', (req, res) => {
-  getData()
+  console.log(req.query);
+  getData(req.query.location)
     .then(({ rows }) => res.json(rows))
     .catch((err) => console.error(err));
 });
