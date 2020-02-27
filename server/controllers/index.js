@@ -1,9 +1,8 @@
-const express = require('express');
+const router = require('express').Router();
 const getData = require('../database/queries/getData');
 const addLocation = require('../database/queries/postData');
 
 
-const router = express.Router();
 router.post('/locations', (req, res) => {
   addLocation(req.body).then(() => res.redirect('/')).catch(console.error);
 });
