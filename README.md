@@ -30,3 +30,9 @@ As a user visiting this site, I should be able to
 * Type in a the location on the input search and when I submit, I will see the result of my search.
 * Post data to the database.
 
+
+## Stretch Goals
+
+* Autocomplete.
+* Google Map.
+
