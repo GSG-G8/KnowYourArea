@@ -1,44 +1,91 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Know Your Area</title>
     <link href="./css/style.css" rel="stylesheet" />
-
-</head>
-<body>
+  </head>
+  <body>
     <main>
-        <header class="header">
-            <h1>
-                Know Your Area
-            </h1>
-            <h2>
-                Our App aims to help people to explore locations using huge database and allows people to post data to the database in order to help other people
-            </h2>
-            <div class="map__container">
-                
-            </div>
-        </header>
-        <section class="section">
-                <input type="text" name="location" id="searchInput" value="" placeholder="location">
-                <button type="submit" name="button" id="viewDetails">View Details</button>
+      <nav class="navbar">
+        <h1>
+          Know Your Area
+        </h1>
+        <div class="nav__search">
+          <input
+            type="text"
+            list="locations__list"
+            name="location"
+            class="search__input"
+            id="searchInput"
+            value=""
+            placeholder="location"
+            autocomplete="off"
+            aria-label="Search"
+          />
+          <button
+            type="submit"
+            name="button"
+            class="search__button"
+            id="viewDetails"
+          >
+            Explore
+          </button>
+          <datalist id="locations__list"></datalist>
+        </div>
+      </nav>
+      <header class="header">
+        <div class="map__container"></div>
+        <h1 class="header__heading">
+          EXPLORE LOCATIONS
+        </h1>
+        <p class="header__paragraph">
+          If you are looking for a new location? You just have to type it's name
+          in the search input, click the submit and POW!! It will appear on
+          front of your eyes!
+        </p>
+      </header>
+      <section class="section results__container"></section>
+      <section id="add-location">
+        <div class="location-container">
+          <div class="location-box">
             <form class="form" action="/locations" method="post">
-                <input type="text" name="name" value="" placeholder="Location Name">
-                <input type="text" name="category" value="" placeholder="Category">
-                <input type="text" name="description" value="" placeholder="Description">
-                <input type="text" name="nearby" value="" placeholder="Near by Locations">
-                <input type="text" name="coordinates" value="" placeholder="Coordinates">
-                <button type="submit" name="button">Add Location</button>
+              <input
+                type="text"
+                name="name"
+                value=""
+                placeholder="Location Name"
+                aria-label="Location Name"
+              />
+              <input
+                type="text"
+                name="category"
+                value=""
+                placeholder="Category"
+                aria-label="Location Category"
+              />
+              <input
+                type="text"
+                name="description"
+                value=""
+                placeholder="Description"
+                aria-label="Location Description"
+              />
+              <input
+                type="text"
+                name="coordinates"
+                value=""
+                placeholder="Coordinates"
+                aria-label="Location Coordinates"
+              />
+              <button type="submit" name="button">Add Location</button>
             </form>
-        </section>
-        <section class = "section results__container">
-            Here you can find the results
-        </section>
-
+          </div>
+        </div>
+      </section>
     </main>
 
-    <script src="./script/fetch.js"></script>
     <script src="./script/dom.js"></script>
-</body>
+  </body>
 </html>
