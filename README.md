@@ -12,6 +12,7 @@ Our project is a site for locations. So with our site you can explore the locati
 * Our project contains three main sections:
 * The first section is the nav bar which contain h1 and the input and submit buttons.
 * The second section is the header which contains the map.
+* The third section which contains the results.
 * The last section contains the form to add locations to the site. 
 
 ## How the process of building our project done?
