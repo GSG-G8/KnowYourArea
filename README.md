@@ -24,6 +24,10 @@ Our project is a site for locations. So with our site you can explore the locati
 
 * Finally we collect the works and see the final result.
 
+## Schema
+ ![alt text](https://www9.0zz0.com/2020/02/29/10/878487339.png "Logo Title Text 1") 
+
+
 ## User stories 
 
 As a user visiting this site, I should be able to
