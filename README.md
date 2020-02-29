@@ -10,9 +10,9 @@ Our project is a site for locations. So with our site you can explore the locati
 
  ## What is our project contain?
 * Our project contains three main sections:
-* The first section is the header which contain h1 and h2.
-* The second section contains an input button and form.
-* The last section conatin the search result. 
+* The first section is the nav bar which contain h1 and the input and submit buttons.
+* The second section is the header which contains the map.
+* The last section contains the form to add locations to the site. 
 
 ## How the process of building our project done?
 
