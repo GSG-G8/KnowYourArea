@@ -1,4 +1,4 @@
-[You can visit our site from this link]()
+[You can visit our site from this link](https://knowyourarea.herokuapp.com/)
 # KnowYourArea
 ## Team Members
 * Rawan Abudahrouj.
@@ -23,6 +23,10 @@ Our project is a site for locations. So with our site you can explore the locati
 * Then we divided our tasks, and we start working on it.
 
 * Finally we collect the works and see the final result.
+
+## Schema
+ ![alt text](https://www9.0zz0.com/2020/02/29/10/878487339.png "Logo Title Text 1") 
+
 
 ## User stories 
 
