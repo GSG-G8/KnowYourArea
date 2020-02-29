@@ -3,9 +3,9 @@ const { join } = require('path');
 
 const connection = require('./connection');
 
-const sql = readFileSync(join(__dirname, 'build.sql')).toString();
+const dbBuild = () => {
+  const sql = readFileSync(join(__dirname, 'build.sql')).toString();
+  return connection.query(sql);
+};
 
-connection
-  .query(sql)
-  .then(() => console.log('build created successfully'))
-  .catch((e) => console.error('failed to build', e.stack));
+module.exports = { dbBuild };
